@@ -22,7 +22,7 @@ public class BoardController {
     @GetMapping("/board/write")
     public String boardWriteForm(){
 
-        return "boardWrite";
+        return "board/boardWrite";
     }
 
     @PostMapping("/board/writePro")
@@ -59,7 +59,7 @@ public class BoardController {
         model.addAttribute("endPage", endPage);
 
 
-        return "boardList";
+        return "board/boardList";
     }
 
     @GetMapping("/board/view") //localhost:8080/board/view?id=1
@@ -67,7 +67,7 @@ public class BoardController {
 
         model.addAttribute("board", boardService.boardView(id));
 
-        return "boardView";
+        return "board/boardView";
     }
 
     @GetMapping("/board/delete")
@@ -86,7 +86,7 @@ public class BoardController {
 
         model.addAttribute("board", boardService.boardView(id));
 
-        return "boardModify";
+        return "board/boardModify";
     }
 
     @PostMapping("/board/update/{id}")
