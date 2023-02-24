@@ -15,4 +15,9 @@ public class MemberService {
 
         memberRepository.save(member);
     }
+
+    public void login(Member member){
+
+
+    }
 }

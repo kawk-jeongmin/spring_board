@@ -13,8 +13,9 @@ public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private String userId;
-    private String userPassword;
-    private String userName;
-    private String userEmail;
+    private Integer no;
+    private String id;
+    private String password;
+    private String name;
+    private String email;
 }

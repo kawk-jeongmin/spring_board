@@ -24,6 +24,14 @@ public class MemberController {
 
         memberService.join(member);
 
-        return "";
+        return "member/memberLogin";
+    }
+
+    @PostMapping("/member/login")
+    public String memberLogin(Member member){
+
+        memberService.login(member);
+
+        return "/board/boardMain";
     }
 }
